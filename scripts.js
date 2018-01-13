@@ -55,8 +55,8 @@ $(function () {
     $("form").hide();
 
     $(".start").click(function(){
-        $(".splashPage").fadeTo(500, 0);
-        $(".questionOne").fadeTo(1, 500);
+        $(".splashPage").fadeOut(500);
+        $(".questionOne").fadeIn(1300);
     })
 
     $(".toQuestionTwo").click(function(){
