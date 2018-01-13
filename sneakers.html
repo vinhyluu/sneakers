@@ -4,71 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>What Sneaker Are You?</title>
+    <title>What Sneaker Do I Wear Today?</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>What Sneaker Do I Wear Today?</h1>
-    </header>
+    <div class="wrapper2">
+        <header>
+            <h1>What Sneaker Do I Wear Today?</h1>
+        </header>
+        <div class="wrapper">
+            <div class="splashPage">
+                <div>
+                    <p>For those days I can't decide what sneakers to wear:</p>
+                </div>
+                <div class="startButton">
+                    <a class="start">Start</a>
+                </div>
+            </div>
+            
+            <div class="form">
+                <form action="">
+                    <div class="questionOne">
+                        <p>Is it raining or snowing?</p>
+                        <label for="yesweather">Yes</label>
+                        <input type="radio" name="weather" id="yesweather" value="yesweather" class="radio">
+                        <label for="noweather">No</label>
+                        <input type="radio" name="weather" id="noweather" value="noweather">
+                        
+                        <a class="toQuestionTwo nextQuestion">Next Question</a>
+                    </div>
 
-    <div class="splashPage">
-        <div>
-            <a class="start">Start</a>
+                    <div class="questionTwo">
+                        <p>Will you be running or in a rush?</p>
+                        <label for="yesrun">Yes</label>
+                        <input type="radio" name="running" id="yesrun" value="yesrun">
+                        <label for="norun">No</label>
+                        <input type="radio" name="running" id="norun" value="norun">
+                
+                        <a class="toQuestionThree nextQuestion">Next Question</a>
+                    </div>
+
+                    <div class="questionThree">
+                        <p>Casual or formal?</p>
+                        <label for="casual">Casual</label>
+                        <input type="radio" name="style" id="casual" value="casual">
+                        <label for="formal">Formal</label>
+                        <input type="radio" name="style" id="formal" value="formal">
+                
+                        <a class="toQuestionFour nextQuestion">Next Question</a>
+                    </div>
+                    
+                    <div class="questionFour">
+                        <p>Futuristic or non-futuristic?</p>
+                        <label for="futuristic">Futuristic</label>
+                        <input type="radio" name="future" id="futuristic" value="futuristic">
+                        <label for="nonfuturistic">Non-futuristic</label>
+                        <input type="radio" name="future" id="nonfuturistic" value="nonfuturistic">
+                
+                        <div class="submitButton">
+                            <input type="submit" value="Get shoe choice">
+                        </div>
+                    </div>
+                    
+                    <div class="resultPage">
+                        <div class="resultSection">
+                            <div class="resultTitle"></div>
+                            <div class="resultImage"></div>
+                        </div>
+                        <a class="backHome">Back to the start</a>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-
-    <form action="">
-        <div class="questionOne">
-            <p>Is it raining or snowing?</p>
-            <label for="yesweather">Yes</label>
-            <input type="radio" name="weather" id="yesweather" value="yesweather">
-            <label for="noweather">No</label>
-            <input type="radio" name="weather" id="noweather" value="noweather">
-            
-            <a class="toQuestionTwo">Next Question</a>
-        </div>
-
-        <div class="questionTwo">
-            <p>Will you be running or in a rush?</p>
-            <label for="yesrun">Yes</label>
-            <input type="radio" name="running" id="yesrun" value="yesrun">
-            <label for="norun">No</label>
-            <input type="radio" name="running" id="norun" value="norun">
-    
-            <a class="toQuestionThree">Next Question</a>
-        </div>
-
-        <div class="questionThree">
-            <p>Casual or formal?</p>
-            <label for="casual">Casual</label>
-            <input type="radio" name="style" id="casual" value="casual">
-            <label for="formal">Formal</label>
-            <input type="radio" name="style" id="formal" value="formal">
-    
-            <a class="toQuestionFour">Next Question</a>
-        </div>
-        
-        <div class="questionFour">
-            <p>Futuristic or non-futuristic?</p>
-            <label for="futuristic">Futuristic</label>
-            <input type="radio" name="future" id="futuristic" value="futuristic">
-            <label for="nonfuturistic">Non-futuristic</label>
-            <input type="radio" name="future" id="nonfuturistic" value="nonfuturistic">
-    
-            <div class="submitButton">
-                <input type="submit" value="Get shoe choice">
-            </div>
-        </div>
-        
-        <div class="resultPage">
-            <div class="resultSection">
-                <div class="resultTitle"></div>
-                <div class="resultImage"></div>
-            </div>
-            <a class="backHome">Back to the start</a>
-        </div>
-    </form>
 
 
 

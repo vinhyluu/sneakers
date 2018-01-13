@@ -52,35 +52,46 @@ $(function () {
     $(".questionThree").hide();
     $(".questionFour").hide();
     $(".resultPage").hide();
+    $("form").hide();
 
     $(".start").click(function(){
-        $(".questionOne").show("slow");
-        $(".splashPage").hide("slow");
+        $(".splashPage").fadeTo(500, 0);
+        $(".questionOne").fadeTo(1, 500);
     })
 
     $(".toQuestionTwo").click(function(){
-        $(".questionOne").hide("slow");
-        $(".questionTwo").show("slow");
+        $(".questionOne").fadeOut("slow");
+        $(".questionTwo").fadeIn("slow");
     })
 
     $(".toQuestionThree").click(function(){
-        $(".questionTwo").hide("slow");
-        $(".questionThree").show("slow");
+        $(".questionTwo").fadeOut("slow");
+        $(".questionThree").fadeIn("slow");
     })
 
     $(".toQuestionFour").click(function(){
-        $(".questionThree").hide("slow");
-        $(".questionFour").show("slow");
+        $(".questionThree").fadeOut("slow");
+        $(".questionFour").fadeIn("slow");
     })
 
     $(".submitButton").click(function () {
-        $(".questionFour").hide("slow");
-        $(".resultPage").show("slow");
+        $(".questionFour").fadeOut("slow");
+        $(".resultPage").fadeIn("slow");
     })
 
-    $(".backHome").click(function () {
-        $(".resultPage").hide("slow");
-        $(".splashPage").show("slow");
+    $(".backHome").click(function (e) {
+        e.preventDefault();
+        $("input[type=radio]").val("");
+        window.location.reload();
+        $(".resultPage").fadeOut("slow");
+        $(".splashPage").fadeTo(0, 500);
+    })
+
+    $("label").each(function(){
+        $(this).click(function(){
+            $("label").css("font-weight", "normal");
+            $(this).css("font-weight", "bold");
+        });
     })
 
 
