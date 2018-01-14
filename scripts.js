@@ -10,6 +10,26 @@ const shoes = {
             title: "NikeLab AF1 Downtown X Acronym",
             img: "images/downtown.jpg",
             weather: "yesweather",
+        },
+        {
+            title: "Rick Owens Ramones High",
+            img: "images/rick.jpg",
+            weather: "yesweather",
+        },
+        {
+            title: "Guidi 994",
+            img: "images/guidihigh.jpg",
+            weather: "yesweather",
+        },
+        {
+            title: "visvim Brigadier",
+            img: "images/brigadier.jpg",
+            weather: "yesweather",
+        },
+        {
+            title: "visvim Virgil",
+            img: "images/virgil2.jpg",
+            weather: "yesweather",
         }
     ],
     runShoes: [
@@ -22,14 +42,44 @@ const shoes = {
             title: "Nike Sock Dart",
             img: "images/sockdart.jpg",
             running: "yesrun",
+        },
+        {
+            title: "NikeLab Footscape Magista",
+            img: "images/footscape.jpg",
+            running: "yesrun",
+        },
+        {
+            title: "Nike Free Flyknit Mercurial",
+            img: "images/mercurial.jpg",
+            running: "yesrun",
         }
     ],
     formalShoes: [
         {
-            title: "Visvim Virgil",
+            title: "visvim Virgil",
             img: "images/virgil.jpg",
             style: "formal",
         },
+        {
+            title: "Guidi 992",
+            img: "images/guidilow.jpg",
+            style: "formal",
+        },
+        {
+            title: "Guidi 994",
+            img: "images/guidihigh.jpg",
+            style: "formal",
+        },
+        {
+            title: "visvim Brigadier",
+            img: "images/brigadier.jpg",
+            style: "formal",
+        },
+        {
+            title: "visvim Virgil",
+            img: "images/virgil2.jpg",
+            style: "formal",
+        }
     ],
     futureShoes: [
         {
@@ -175,7 +225,6 @@ $(function () {
         $(".resultImage").append(`<img src="${formalStyle[randomStyle]["img"]}">`);
     }
         
-
         //end casual/formal
 
         //future vs non future

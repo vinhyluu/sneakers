@@ -6,6 +6,16 @@ html{
     font-size: 62.5%;
 }
 
+img{
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
 .wrapper{
     width: 70%;
     margin: 0 auto;
@@ -20,22 +30,29 @@ html{
     text-align: center;
     display: table;
     margin: 0 auto;
-    font-size: 5rem;
+    font-size: 3rem;
+}
+
+header{
+    background: black;
+    color: white;
 }
 
 .splashPage p{
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 h1{
     text-transform: uppercase;
-    font-size: 7rem;
+    font-size: 3rem;
     text-align: center;
+    margin: 0;
+    padding: 50px 0 50px 0;
 }
 
 .startButton a{
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 5px 25px;
     text-transform: uppercase;
     -webkit-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.79);
@@ -57,6 +74,11 @@ h1{
 
 .form p{
     margin-top: 0px;
+    font-size: 2.5rem; 
+}
+
+.resultPage{
+    position: relative;
 }
 
 .questionOne, .questionTwo, .questionThree, .questionFour{
@@ -65,23 +87,45 @@ h1{
     flex-direction: column;
     top: 50%; left: 50%;
     transform: translate(-50%,-50%); 
-    /* border: 3px solid black;
-    padding: 50px;
-    width: 700px;
-    height: 500px; */
 }
 
 .nextQuestion, .submitForm, .backHome{
     border: 1px solid black;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 2.5rem;
 }
 
-.nextQuestion:hover, .submitForm:hover, .backHome:hover{
+.nextQuestion:hover, .submitForm:hover{
     background: black;
     color: white;
+}
+
+.backHome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    color: white;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.resultSection:hover .overlay{
+    opacity: 1;
 }
 
 input[type=checkbox], input[type=radio] {
@@ -92,9 +136,28 @@ input[type=checkbox], input[type=radio] {
 
 label{
     cursor: pointer;
+    font-size: 2rem;
 }
 
 .bold { 
     font-weight: bold; 
 }
 
+.resultImage{
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.shoeTitle{
+    font-size: 2.5rem;
+    margin-top: 30px;
+}
+
+.resultSection{
+    position: relative;
+}
+
+/* Media Queries */
+@media(max-width : 815px){
+    
+}
