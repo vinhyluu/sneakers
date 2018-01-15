@@ -9,11 +9,6 @@ html{
 img{
     max-width: 100%;
     max-height: 100%;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
 }
 
 .wrapper{
@@ -129,9 +124,7 @@ h1{
 }
 
 input[type=checkbox], input[type=radio] {
-    box-sizing: border-box;
-    padding: 0;
-    visibility: hidden;
+    opacity: 0;
 }
 
 label{
@@ -145,7 +138,7 @@ label{
 
 .resultImage{
     overflow: hidden;
-    margin-bottom: 70px;
+    margin: 40px 0;
 }
 
 .shoeTitle{
@@ -158,6 +151,8 @@ label{
 }
 
 /* Media Queries */
-@media(max-width : 815px){
-    
+@media ( max-width: 652px ){
+    a.backHome{
+        padding: 15px;
+    }
 }
